@@ -1,0 +1,7 @@
+[wrap-file]
+subdir = sqlite-amalgamation-3081002
+
+source_url = http://sqlite.org/2015/sqlite-amalgamation-3081002.zip
+source_filename = sqlite-amalgamation-3081002.zip
+source_hash = 8272ba79711bf7f64a029d5976ce565ef3fb9bdbbb8b18affdae83d0dd60d61b
+
