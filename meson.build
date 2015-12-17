@@ -1,5 +1,5 @@
-project('sqlite', 'c')
+project('sqlite', 'c', version : '3080802', license : 'pd')
 
-sqlib = static_library('sqlite', 'sqlite3.c')
+sqlib = library('sqlite', 'sqlite3.c')
 sqinc = include_directories('.')
 
