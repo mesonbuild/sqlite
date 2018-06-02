@@ -1,3 +1,3 @@
-This repository contains the Meson Wrap definitions of SQLite.
+This repository contains a Meson build definition for project sqlite.
 
-For more information please go to http://mesonbuild.com.
+For more information please see http://mesonbuild.com.
