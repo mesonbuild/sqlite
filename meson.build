@@ -1,4 +1,4 @@
-project('sqlite', 'c', version : '3140200', license : 'pd')
+project('sqlite', 'c', version : '3250100', license : 'pd')
 
 
 thread_dep = dependency('threads')
