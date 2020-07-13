@@ -13,9 +13,11 @@ if cc.get_id() == 'msvc' and get_option('default_library') != 'static'
 endif
 
 sqinc = include_directories('.')
-sqlib = library('sqlite', 'sqlite3.c', include_directories : sqinc,
+sqlib = library('sqlite3', 'sqlite3.c', include_directories: sqinc,
     c_args : sqlite_args,
     dependencies : [thread_dep, dl_dep, m_dep],
+    # ABI compatibility with autotools/libtool
+    version: '0.8.6',
     install: true)
 
 
