@@ -20,6 +20,13 @@ sqlib = library('sqlite3', 'sqlite3.c', include_directories: sqinc,
     version: '0.8.6',
     install: true)
 
+install_headers('sqlite3.h')
 
 sqlite_dep = declare_dependency(link_with : sqlib,
     include_directories : sqinc)
+
+pkg = import('pkgconfig')
+pkg.generate(name: 'sqlite3',
+             description: 'An embedded SQL database engine',
+             version: meson.project_version(),
+             libraries: sqlib)
