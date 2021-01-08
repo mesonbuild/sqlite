@@ -4,3 +4,6 @@ directory = sqlite-amalgamation-3320300
 source_url = https://www.sqlite.org/2020/sqlite-amalgamation-3320300.zip
 source_filename = sqlite-amalgamation-3320300.zip
 source_hash = e9cec01d4519e2d49b3810615237325263fe1feaceae390ee12b4a29bd73dbe2
+
+[provide]
+sqlite3_dep = sqlite_dep
